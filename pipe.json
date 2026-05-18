@@ -1,0 +1,16 @@
+{
+  "name": "activity-summary",
+  "description": "Daily & weekly AI-powered activity summary with time tracking, app usage, and productivity insights from your screen history",
+  "version": "1.0.0",
+  "author": "64johnlee",
+  "crons": [
+    {
+      "path": "/api/cron/daily",
+      "schedule": "0 18 * * *"
+    },
+    {
+      "path": "/api/cron/weekly",
+      "schedule": "0 9 * * 1"
+    }
+  ]
+}
